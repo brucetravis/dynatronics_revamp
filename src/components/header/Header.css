@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.header.hide {
+    transform: translateY(-100%)
+}
+
+.header.show {
+    transform: translateY(0)
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 15px;
+    text-decoration: none;
+    /* color: #3860ff; */
+    color: #0dcaf0;
+}
+
+nav a.active {
+    color: #1A1D29;
+    background: linear-gradient(135deg, #2532ac 0%, #0DCAF0 100%);
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-bottom: 3px solid #ff6905;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2) ;
+}
+
+.header .user-toolTip {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header .signUp-Tip {
+    color: #1A1D29;
+    background: linear-gradient(135deg, #2532ac 0%, #0DCAF0 100%);
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-bottom: 3px solid #ff6905;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
