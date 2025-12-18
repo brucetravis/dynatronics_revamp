@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Header.css'
 import { NavLink } from 'react-router-dom'
-import { UserCircle } from 'lucide-react'
+import { Menu, UserCircle, X } from 'lucide-react'
 import { Tooltip } from 'react-tooltip'
 
 export default function Header() {
@@ -11,8 +11,13 @@ export default function Header() {
     // state to determine the position of the header
     const [ lastScrollY, setLastScrollY ] = useState(0)
 
+    // state to show the header on icon click
+    const [ menuOpen, setMenuOpen ] = useState(false) // initial state is false
+
     // useEffect react hook to apply side effects on mount
     useEffect(() => {
+        // if menuOpen is true (Header on mobile)
+        if (menuOpen) return // exit the function
         
         // function to handle the scroll (function will trigger every time the user scrolls)
         const handleScroll = () => {
@@ -38,50 +43,100 @@ export default function Header() {
         // clean up
         return () => window.removeEventListener("scroll", handleScroll) // stop listening to scroll events to prevent memory leaks and scroll events
 
-    }, [lastScrollY]) // watch out for the astScroll value to determine the position of the header when scrolling down
+    }, [lastScrollY, menuOpen]) // watch out for the astScroll value to determine the position of the header when scrolling down
+
+    console.log(menuOpen)
 
     
   return (
-    <header
-        className={`header ${show ? 'show' : 'hide'}`}
-    >
-        <div>
-            DYNATRONICS
-        </div>
+    <section>
+        <header
+            className={`header ${show ? 'show' : 'hide'}`}
+        >
+            <div
+                className='logo'
+            >
+                DYNATRONICS
+            </div>
 
-        <nav>
-            <NavLink to='/' className={({ isActive }) => isActive ? "active" : ""}>
-                Machines
-            </NavLink>
+            <nav>
+                <NavLink to='/' className={({ isActive }) => isActive ? "active" : ""}>
+                    Machines
+                </NavLink>
 
-            <NavLink to='/automation' className={({ isActive }) => isActive ? "active" : ""}>
-                Automation
-            </NavLink>
+                <NavLink to='/automation' className={({ isActive }) => isActive ? "active" : ""}>
+                    Automation
+                </NavLink>
 
-            <NavLink to='/shop' className={({ isActive }) => isActive ? "active" : ""} >
-                Shop
-            </NavLink>
+                <NavLink to='/shop' className={({ isActive }) => isActive ? "active" : ""} >
+                    Shop
+                </NavLink>
+                
+                <NavLink to='/efficiency' className={({ isActive}) => isActive ? "active " : ""}>
+                    Efficiency
+                </NavLink>
+
+                <NavLink to='/connect' className={({ isActive }) => isActive ? "active" : ""}>
+                    Connect
+                </NavLink>
+
+            </nav>
             
-            <NavLink to='/efficiency' className={({ isActive}) => isActive ? "active " : ""}>
-                Efficiency
-            </NavLink>
+            <div>
+                <UserCircle
+                    size={20}
+                    stroke='#0dcaf0'
+                    data-tooltip-id="userTip"
+                    className='user-toolTip'
+                />
+            </div>
 
-            <NavLink to='/connect' className={({ isActive }) => isActive ? "active" : ""}>
-                Connect
-            </NavLink>
+            {menuOpen ? (
+                <X
+                    size={25}
+                    stroke='#0dcaf0'
+                    className='menu-icon'
+                    onClick={() => setMenuOpen(prev => !prev)} // flip the state on click
+                />
+            ) : (
+                <Menu
+                    size={25}
+                    stroke='#0dcaf0'
+                    className='menu-icon'
+                    onClick={() => setMenuOpen(prev => !prev)} // flip the state on click
+                />
+            )}
 
-        </nav>
-        
-        <div>
-            <UserCircle
-                size={20}
-                stroke='#0dcaf0'
-                data-tooltip-id="userTip"
-                className='user-toolTip'
-            />
-        </div>
+            {menuOpen && (
+                <div
+                    className='mobile-nav'
+                >
+                    <nav>
+                        <NavLink to='/' className={({ isActive }) => isActive ? "active" : ""}>
+                            Machines
+                        </NavLink>
 
-        <Tooltip id="userTip" effect="solid" place="bottom" className="signUp-Tip">Account</Tooltip>
-    </header>
+                        <NavLink to='/automation' className={({ isActive }) => isActive ? "active" : ""}>
+                            Automation
+                        </NavLink>
+
+                        <NavLink to='/shop' className={({ isActive }) => isActive ? "active" : ""} >
+                            Shop
+                        </NavLink>
+                        
+                        <NavLink to='/efficiency' className={({ isActive}) => isActive ? "active " : ""}>
+                        Efficiency
+                        </NavLink>
+
+                        <NavLink to='/connect' className={({ isActive }) => isActive ? "active" : ""}>
+                            Connect
+                        </NavLink>
+                    </nav>
+                </div>
+            )}
+
+            <Tooltip id="userTip" effect="solid" place="bottom" className="signUp-Tip">Account</Tooltip>
+        </header>
+    </section>
   )
 }
