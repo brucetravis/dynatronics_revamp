@@ -132,15 +132,6 @@ export default function Header() {
                             Connect
                         </NavLink>
                     </nav>
-
-                    <div>
-                        <UserCircle
-                            size={20}
-                            stroke='#0dcaf0'
-                            data-tooltip-id="userTip"
-                            className='user-toolTip'
-                        />
-                    </div>
                 </div>
             )}
 
