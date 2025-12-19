@@ -1,0 +1,99 @@
+.ourprocess-section {
+    
+}
+
+.ourprocess-section h3 {
+  color: #0dcaf0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.ourprocess-section p {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.ourprocess-section .steps-carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+}
+
+.ourprocess-section .steps-track {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.ourprocess-section .steps-carousel .step-card {
+    width: 1000px;
+    height: 600px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.ourprocess-section .steps-carousel .step-card .step-image {
+  height: 100%;
+  /* width: 650px; */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px
+}
+
+.ourprocess-section .steps-carousel .step-card .step-card-overlay {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  background: rgba(36, 41, 56, 0.85);;
+  width: 100%;
+}
+
+.ourprocess-section .steps-carousel .step-card h3 {
+    color: #ff6905;
+}
+
+.ourprocess-section .steps-carousel .arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 100%;
+  height: 8vh;
+}
+
+.ourprocess-section .steps-carousel .arrows .arrow-left,
+.ourprocess-section .steps-carousel .arrows .arrow-right {
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: white;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13, 202, 204, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.ourprocess-section .steps-carousel .arrows .arrow-left:hover,
+.ourprocess-section .steps-carousel .arrows .arrow-right:hover {
+  background: rgba(11, 167, 170, 0.8);
+}
+
+.ourprocess-section .steps-carousel .arrows .arrow-left { 
+  left: 10px;
+}
+
+.ourprocess-section .steps-carousel .arrows .arrow-right { 
+  right: 10px;
+}
+
+
