@@ -1,0 +1,41 @@
+.capabilities-section {
+    padding: 6rem 2rem;
+    width: 100%;
+}
+
+
+.capabilities-section .capabilities-header {
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+}
+
+
+.capabilities-section p {
+    color: #0dcaf0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 auto 4rem auto;
+    font-size: 0.85rem;
+}
+
+
+.capabilities-section .capabilities-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+@media (max-width: 900px) {
+    .capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .capabilities-grid {
+        grid-template-columns: 1fr;
+    }
+}
