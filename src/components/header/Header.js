@@ -14,6 +14,10 @@ export default function Header() {
     // state to show the header on icon click
     const [ menuOpen, setMenuOpen ] = useState(false) // initial state is false
 
+
+    // state to control the header background on page scroll
+    const [ scrolled, setScrolled ] = useState(false) // initial state is false
+
     // useEffect react hook to apply side effects on mount
     useEffect(() => {
         // if menuOpen is true (Header on mobile)
@@ -51,7 +55,7 @@ export default function Header() {
   return (
     <section>
         <header
-            className={`header ${show ? 'show' : 'hide'}`}
+            className={`header ${show ? 'show' : 'hide'} ${scrolled ? "scrolled" : "top"}`}
         >
             <div
                 className='logo'

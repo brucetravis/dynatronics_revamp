@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1A1D29;
     padding: 20px 50px;
     position: fixed;
     top: 0;
@@ -21,19 +20,39 @@
     transform: translateY(0)
 }
 
-nav {
+.header.scrolled {
+    background-color: #1A1D29;
+    color: #1A1D29;
+}
+
+.header.top {
+    background: rgb(26, 29, 41, 0.2);
+    box-shadow: none;
+}
+
+.header.top a {
+    color: #0dcaf0;
+}
+
+.header.top a.active {
+    background: none;
+    border-bottom: 1px solid #61e0fa;
+    padding: 0;
+    box-shadow: none;
+}
+
+.header nav {
     display: flex;
     gap: 20px;
 }
 
-nav a {
+.header nav a {
     font-size: 15px;
     text-decoration: none;
-    /* color: #3860ff; */
     color: #0dcaf0;
 }
 
-nav a.active {
+.header nav a.active {
     color: #1A1D29;
     background: linear-gradient(135deg, #2532ac 0%, #0DCAF0 100%);
     padding: 5px 10px;
