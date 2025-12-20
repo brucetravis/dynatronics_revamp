@@ -81,11 +81,11 @@ export default function Header() {
                 </NavLink>
 
                 <NavLink to='/shop' className={({ isActive }) => isActive ? "active" : ""} >
-                    Shop
+                    gadgets
                 </NavLink>
                 
                 <NavLink to='/efficiency' className={({ isActive}) => isActive ? "active " : ""}>
-                    Efficiency
+                    Shop
                 </NavLink>
 
                 <NavLink to='/connect' className={({ isActive }) => isActive ? "active" : ""}>
