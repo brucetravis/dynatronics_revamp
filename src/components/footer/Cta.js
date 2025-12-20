@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Cta.css'
 import { Send } from 'lucide-react'
 
-export default function Footer() {
+export default function Cta() {
 
     // state to keep track which place holder is visible
     const [ currentPlaceHolder, setCurrentPlaceHolder ] = useState(0) // initial state is the first index
