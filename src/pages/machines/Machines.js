@@ -3,7 +3,8 @@ import './Machines.css'
 import MachineHero from './hero/MachineHero'
 import MachineProducts from './machineProducts/MachineProducts'
 import Capabilities from './capabilities/Capabilities'
-import UseCase from './usecase.js/UseCase'
+import UseCase from './usecase/UseCase'
+
 
 export default function Machines() {
   return (
