@@ -3,6 +3,7 @@ import './Machines.css'
 import MachineHero from './hero/MachineHero'
 import MachineProducts from './machineProducts/MachineProducts'
 import Capabilities from './capabilities/Capabilities'
+import UseCase from './usecase.js/UseCase'
 
 export default function Machines() {
   return (
@@ -10,6 +11,7 @@ export default function Machines() {
       <MachineHero />
       <MachineProducts />
       <Capabilities />
+      <UseCase />
     </div>
   )
 }
