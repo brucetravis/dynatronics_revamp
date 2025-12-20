@@ -22,7 +22,7 @@
 
 .header.scrolled {
     background-color: #1A1D29;
-    color: #1A1D29;
+    color: #0dcaf0;
 }
 
 .header.top {
@@ -36,7 +36,8 @@
 
 .header.top a.active {
     background: none;
-    border-bottom: 1px solid #61e0fa;
+    color: #0dcaf0;
+    border-bottom: 2px solid #ff6905;
     padding: 0;
     box-shadow: none;
 }

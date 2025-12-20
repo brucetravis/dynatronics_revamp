@@ -37,6 +37,14 @@ export default function Header() {
                 // scrolling up
                 setShow(true)
             }
+            
+
+            // if the automatic browser scroll's value is 0
+            if (currentScrollY > 0) {
+                setScrolled(true) // update the state to true, since the user is scrolling
+            } else {
+                setScrolled(false) // update the state to false, since the user is at the top
+            }
 
             // update the lastScroll with teh currentScroll
             setLastScrollY(currentScrollY)
