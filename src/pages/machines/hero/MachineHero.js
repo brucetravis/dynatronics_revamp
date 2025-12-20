@@ -4,7 +4,7 @@ import './MachineHero.css'
 export default function MachineHero() {
 
     // state to keep trac of the current element in the array
-    const [ currentIndex, setCurrentIndex ] = useState(0) // initial state is the first index
+    const [ currentIndex, setCurrentIndex ] = useState(0) // initial state is (0) the first index
     // state to control what happens when images fade in and out
     const [ fadeClass, setFadeClass ] = useState('fade-in') // initial state is the fade-out class
 
