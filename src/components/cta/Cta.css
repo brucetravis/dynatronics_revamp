@@ -1,0 +1,93 @@
+.cta-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #1A1D29;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+
+.cta-section .cta-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    width: 100%;
+    padding: 5px;
+    position: relative;
+}
+
+.cta-section .cta-container .cta-label {
+    color: #0dcaf0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    white-space: nowrap;
+    position: absolute;
+    left: 15px;
+    z-index: 2;
+}
+
+.cta-section .cta-container .cta-input {
+    flex: 1;
+    position: relative;
+    padding: 0.75rem 1rem 1rem 135px;
+    background: none;
+    outline: none;
+    color: white;
+    border-color: #0dcaf0;
+    border-radius: 5px;
+    min-width: 0;
+}
+
+.cta-section .cta-container .cta-input::placeholder {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.cta-section .cta-container .submit-btn {
+    position: absolute;
+    right: 15px;
+    z-index: 10;
+    background: none;
+    border: none;
+    color: #0dcaf0;
+    transition: all 0.3s ease;
+}
+
+
+.cta-section .cta-container .submit-btn:hover {
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    background: rgb(13, 202, 240, 0.3);
+    padding: 2px;
+    cursor: pointer;
+}
+
+@media (max-width: 762px) {
+    .cta-section .cta-container {
+        flex-direction: column;
+        gap: 0.3rem;
+        /* background-color: red; */
+        /* width: 100%; */
+    }
+
+    .cta-section .cta-container .cta-label,
+    .cta-section .cta-container .submit-btn {
+        position: static
+    }
+
+    .cta-section .cta-container .cta-input {
+        padding-left: 1rem; /* remove large left padding on mobile */
+        width: 100%;
+    }
+
+}
+
+
+

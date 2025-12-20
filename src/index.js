@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Header from  './components/header/Header'
 import { BrowserRouter } from 'react-router-dom';
+import Cta from './components/cta/Cta';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +12,7 @@ root.render(
     <BrowserRouter>
       <Header />
       <App />
+      <Cta />
     </BrowserRouter>
   </React.StrictMode>
 );
