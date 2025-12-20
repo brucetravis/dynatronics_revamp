@@ -34,7 +34,7 @@ export default function Cta() {
     
   return (
     <section
-        className='footer-section'
+        className='cta-section'
     >
         <form
             className='cta-container'
