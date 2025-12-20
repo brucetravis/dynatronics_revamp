@@ -80,8 +80,6 @@ export default function UseCase() {
         <section className="usecase-section">
             <p className="usecase-label">USE CASES</p>
 
-            <p className='usecase-statement'>Innovative Technology at work</p>
-
             <div className="usecase-examples">
                 {useCases.map((useCase, index) => (
                     <UseCaseItem
