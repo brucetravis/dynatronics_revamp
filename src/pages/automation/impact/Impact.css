@@ -1,0 +1,77 @@
+.impact-section {
+    padding: 6rem 2rem;
+    background: #0f1117;
+    color: #fff;
+    text-align: center;
+}
+
+.impact-section .impact-label {
+    color: #0dcaf0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+
+.impact-section .impact-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.impact-section .impact-item {
+    padding: 30px 15px;
+    transition: all 0.5s ease;
+}
+
+.impact-section .impact-item:hover {
+    cursor: pointer;
+    background: rgb(26, 29, 41, 0.3);
+    transition: all 0.3 ease;
+}
+
+.impact-section .impact-item .impact-icon:hover{
+    border: none;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.impact-section .impact-item .impact-icon.zap:hover {
+    filter: drop-shadow(2px 4px 12px rgba(13, 202, 240))
+}
+
+.impact-section .impact-item .impact-icon.checkCircle:hover {
+    filter: drop-shadow(2px 4px 12px rgb(255, 107, 107))
+}
+
+.impact-section .impact-item .impact-icon.arrowDown:hover{
+    filter: drop-shadow(2px 4px 12px rgb(247, 181, 0))
+}
+
+.impact-section .impact-item .impact-icon.zap:hover{
+    filter: drop-shadow(2px 4px 12px rgb(156, 226, 240))
+}
+
+.impact-section .impact-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+@media (max-width: 992px) {
+
+    .impact-section .impact-label {
+        font-size: 0.65rem;
+    }
+
+    .impact-grid {
+        flex-direction: column;
+    }
+}
+
