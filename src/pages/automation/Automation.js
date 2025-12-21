@@ -1,8 +1,12 @@
 import React from 'react'
 import './Automation.css'
+import AutomationHero from './hero/AutomationHero'
 
 export default function Automation() {
   return (
-    <div>Automation</div>
+    <section>
+        <AutomationHero />
+        
+    </section>
   )
 }
