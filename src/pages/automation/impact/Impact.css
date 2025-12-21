@@ -33,7 +33,7 @@
 .impact-section .impact-item:hover {
     cursor: pointer;
     background: rgb(26, 29, 41, 0.3);
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 .impact-section .impact-item .impact-icon:hover{
