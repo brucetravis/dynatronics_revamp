@@ -1,0 +1,77 @@
+.automation-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../../../images/automation_hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+
+.automation-hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #9ce2f0, #f78989);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  margin: 0 auto 5px;
+  transition: all 0.5s ease;
+}
+
+.automation-hero h1:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
+.automation-hero .automation-loading {
+  width: 24vw;
+  height: 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.3);
+  overflow: hidden;
+  background: rgba(255,255,255,0.08);
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.automation-hero .automation-loading:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgb(13, 202, 240);
+}
+
+.automation-hero .automation-loading .automation-loader {
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ff4d4d,
+    #ff6b6b,
+    transparent
+  );
+  border-radius: 999px;
+}
+
+.automation-hero .automation-loader:hover {
+  cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+  .automation-hero h1 {
+    font-size: 2rem;
+  }
+
+  .automation-hero .automation-loading {
+    width: 56vw;
+  }
+}
+
+
+
