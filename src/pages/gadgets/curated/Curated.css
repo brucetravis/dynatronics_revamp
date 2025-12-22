@@ -35,16 +35,16 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .curated-section {
+        padding: 6rem 0;
+    }
+
     .curated-section .curated-content .curated-line {
         font-size: 1rem;
     }
 
     .curated-section .curated-content .curated-line.strong {
         font-size: 1.5rem;
-    }
-
-    .curated-section .curated-content {
-        padding-right: 5rem;
     }
 }
 
