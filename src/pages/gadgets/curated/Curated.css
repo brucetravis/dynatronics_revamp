@@ -17,7 +17,7 @@
 
 
 .curated-section .curated-content .curated-line {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     line-height: 1.6;
     color: rgba(255,255,255,0.85);
     font-weight: 400;
@@ -30,7 +30,7 @@
 }
 
 .curated-section .curated-content .curated-line.muted {
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Responsive */

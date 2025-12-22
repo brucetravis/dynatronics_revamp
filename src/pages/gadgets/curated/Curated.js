@@ -27,7 +27,7 @@ export default function Curated() {
             </p>
 
             <p className="curated-line muted">
-                Every gadget is selected because it stands apart — not because it sells fast.
+                Every gadget is selected because it stands out — not because it sells fast.
             </p>
         </motion.div>
 
