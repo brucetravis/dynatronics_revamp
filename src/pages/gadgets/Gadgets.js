@@ -4,6 +4,7 @@ import GadgetsHero from './gadgetsHero/GadgetsHero'
 import Curated from './curated/Curated'
 import FeaturedGadgets from './featuredGadgets/FeaturedGadgets'
 import Intelligence from '../intelligence/Intelligence'
+import Explore from './explore/Explore'
 
 export default function Gadgets() {
   return (
@@ -12,6 +13,7 @@ export default function Gadgets() {
       <Curated />
       <FeaturedGadgets />
       <Intelligence />
+      <Explore />
     </section>
   )
 }
