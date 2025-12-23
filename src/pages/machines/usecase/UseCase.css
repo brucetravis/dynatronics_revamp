@@ -1,0 +1,28 @@
+.usecase-section {
+    padding: 6rem 2rem;
+    width: 100%;
+}
+
+.usecase-section .usecase-header {
+    margin: 0 auto 4rem auto;
+}
+
+.usecase-section .usecase-label {
+    color: #0dcaf0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+}
+
+
+.usecase-section .usecase-statement {
+    text-align: center;
+}
+
+.usecase-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 2rem 6rem;
+}
