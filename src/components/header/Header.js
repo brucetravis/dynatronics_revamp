@@ -84,9 +84,9 @@ export default function Header() {
                     gadgets
                 </NavLink>
                 
-                <NavLink to='/shop' className={({ isActive}) => isActive ? "active " : ""}>
+                {/* <NavLink to='/shop' className={({ isActive}) => isActive ? "active " : ""}>
                     Shop
-                </NavLink>
+                </NavLink> */}
 
                 <NavLink to='/connect' className={({ isActive }) => isActive ? "active" : ""}>
                     Connect
@@ -136,9 +136,9 @@ export default function Header() {
                             Gadgets
                         </NavLink>
                         
-                        <NavLink to='/shop' className={({ isActive}) => isActive ? "active " : ""}>
+                        {/* <NavLink to='/shop' className={({ isActive}) => isActive ? "active " : ""}>
                             Shop
-                        </NavLink>
+                        </NavLink> */}
 
                         <NavLink to='/connect' className={({ isActive }) => isActive ? "active" : ""}>
                             Connect
