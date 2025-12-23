@@ -1,0 +1,75 @@
+.usecase-item-section {
+    position: relative;
+    width: 100%;
+}
+
+
+.usecase-item-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.usecase-item-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.usecase-item-section .usecase-item-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.usecase-item-section .usecase-item-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform all 0.5s ease;
+}
+
+
+.usecase-item-section .usecase-item-image img:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.usecase-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+.usecase-title {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    opacity: 0.75;
+}
+
+.usecase-description {
+    font-size: 1rem;
+    opacity: 0.7;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 992px) {
+    .usecase-item-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .usecase-item-section.reverse {
+        flex-direction: column;
+    }
+
+    .usecase-item-image img {
+        height: 300px
+    }
+}

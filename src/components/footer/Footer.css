@@ -1,0 +1,24 @@
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(255, 255, 255, 0.5);
+    padding: 15px;
+    margin-bottom: 10vh;
+}
+
+
+.footer-section a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.5);
+    transition: transform 0.5s ease
+}
+
+
+.footer-section a:hover {
+    cursor: pointer;
+    color: #0dcaf0;
+    transform: translateY(-5px);
+}
+
