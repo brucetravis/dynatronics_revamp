@@ -1,0 +1,18 @@
+.shop-section {
+    padding: 10px;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shop-section h2 {
+    color: #0dcaf0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}

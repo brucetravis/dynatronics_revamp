@@ -8,7 +8,11 @@ export default function Shop() {
         className='shop-section'
     >
         <ShopHeader />
+        <div>
+            <h2>EXPLORE OUR COLLECTION</h2>
+        </div>
 
+        
     </section>
   )
 }
