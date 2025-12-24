@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Header.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { Menu, UserCircle, X } from 'lucide-react'
 import { Tooltip } from 'react-tooltip'
 
@@ -59,6 +59,7 @@ export default function Header() {
 
     console.log(menuOpen)
 
+    const navigate = useNavigate()
     
   return (
     <section>
@@ -67,8 +68,9 @@ export default function Header() {
         >
             <div
                 className='logo'
+                onClick={() => navigate('/')}
             >
-                DYNATRONICS
+                <h3>DYNATRONI<span>X</span></h3>
             </div>
 
             <nav>

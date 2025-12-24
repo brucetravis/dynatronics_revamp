@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 5px 50px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -28,6 +28,32 @@
 .header.top {
     background: rgb(26, 29, 41, 0.2);
     box-shadow: none;
+}
+
+.header .logo:hover {
+    cursor: pointer;
+}
+
+.header .logo h3 {
+    color: #ffffff;
+    font-size: 1.5rem; /* increase size for impact */
+    font-family: 'Menorah Grotesk', sans-serif;
+    letter-spacing: 3px; /* robotic feel */
+    text-transform: uppercase;
+    text-shadow: 
+        0 0 5px #0dcaf0,      /* subtle cyan glow */
+        0 0 10px #0dcaf0,     /* soft outer glow */
+        0 0 20px rgba(13, 202, 240, 0.5), /* extended glow */
+        0 0 30px rgba(13, 202, 240, 0.3); /* cinematic fade */
+    transition: text-shadow 0.3s ease;
+}
+
+.header .logo span {
+    color: #0dcaf0; /* cyan accent for X */
+    text-shadow: 
+        0 0 5px #0dcaf0, 
+        0 0 15px #0dcaf0, 
+        0 0 30px rgba(13, 202, 240, 0.7);
 }
 
 .header.top a {
