@@ -59,7 +59,12 @@ export default function MachineProducts() {
             >
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <button>View details</button>
+              <button
+                type='button'
+                onClick={() => alert('⚡ Our robots will launch soon! Stay tuned for updates and sneak peeks you won’t want to miss.')}
+              >
+                View details
+              </button>
             </div>
           </div>
         ))}
