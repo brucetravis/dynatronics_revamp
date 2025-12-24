@@ -23,6 +23,38 @@
 .usecase-examples {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 6rem;
     padding: 2rem 6rem;
+}
+
+
+@media (max-width: 992px) {
+    .usecase-section {
+        padding: 0;
+        width: 100%;
+    }
+
+    .usecase-section {
+        padding: 6rem 0.5rem;
+    }
+
+    .usecase-examples {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 462px) {
+    .usecase-section {
+        padding: 6rem 2rem;
+        width: 100%;
+    }
+
+    .usecase-section {
+        padding: 6rem 0.5rem;
+    }
+
+    .usecase-examples {
+        padding: 2rem 1rem;
+    }
 }
