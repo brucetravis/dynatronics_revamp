@@ -26,16 +26,30 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem; */
 }
 
-@media (max-width: 900px) {
-    .capabilities-grid {
+@media (max-width: 992px) {
+    .capabilities-section .capabilities-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .capabilities-section p {
+        margin: 0;
     }
 }
 
-@media (max-width: 600px) {
-    .capabilities-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 462px) {
+    .capabilities-section .capabilities-grid {
+        /* grid-template-columns: 1fr; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .capabilities-section p {
+        margin: 0;
     }
 }

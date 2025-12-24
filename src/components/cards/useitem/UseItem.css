@@ -4,13 +4,13 @@
 }
 
 
-.usecase-item-section.reverse {
+/* .usecase-item-section.reverse {
     flex-direction: row-reverse;
 }
 
 .usecase-item-section:nth-child(even) {
     flex-direction: row-reverse;
-}
+} */
 
 .usecase-item-section .usecase-item-image {
     position: relative;
@@ -22,7 +22,7 @@
     width: 100%;
     height: 500px;
     object-fit: cover;
-    transition: transform all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 
@@ -42,6 +42,7 @@
     background: rgba(0,0,0,0.3);
     padding: 2rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 
@@ -69,7 +70,68 @@
         flex-direction: column;
     }
 
+    .usecase-item-section .usecase-item-image {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .usecase-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        background: rgba(0,0,0,0.3);
+        padding: 2rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
     .usecase-item-image img {
         height: 300px
     }
+
+    .usecase-title {
+        font-size: 1rem;
+    }
+
+    .usecase-description {
+        font-size: 0.85rem;
+    }
 }
+
+@media (max-width: 462px) {
+    .usecase-item-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .usecase-item-section .usecase-item-image {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .usecase-overlay {
+        padding: 2rem;
+    }
+
+    .usecase-item-image img {
+        height: 300px
+    }
+
+    .usecase-title {
+        font-size: 1rem;
+    }
+
+    .usecase-description {
+        font-size: 0.85rem;
+    }
+}
+
+
+

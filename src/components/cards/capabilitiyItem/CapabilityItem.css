@@ -35,3 +35,17 @@
     height: inherit;
 }
 
+
+@media (max-width: 992px) {
+    .capability-title {
+        font-size: 0.95rem;
+
+    }
+}
+
+@media (max-width: 462px) {
+    .capability-title {
+        font-size: 0.85rem;
+    }
+}
+
