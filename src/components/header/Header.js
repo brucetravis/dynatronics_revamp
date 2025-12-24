@@ -68,7 +68,11 @@ export default function Header() {
             <div
                 className='logo'
             >
-                DYNATRONICS
+                <img 
+                    src="/logo_2-removebg.png"
+                    alt='Dynapic'
+                    className='logo-image'
+                />
             </div>
 
             <nav>
