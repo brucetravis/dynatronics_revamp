@@ -12,7 +12,7 @@ export default function Cta() {
         "Do you have make",
         "What can your robots do?",
         "Where are your robots typically used?",
-        "Is this suitable for small factories or only large ones?",
+        "Is this suitable for all factory sizes?",
         "How customizable are your robots?"
     ]
 
@@ -40,7 +40,7 @@ export default function Cta() {
             className='cta-container'
         >
             <div className='cta-label'>
-                <p>Ask a question</p>
+                <p>Ask a question: </p>
             </div>
             
             <input 
@@ -59,12 +59,14 @@ export default function Cta() {
                     size={20}
                 />
             </button>
+
+            <button
+                type='submit'
+                className='mobile-submit-btn'
+            >
+                submit
+            </button>
         </form>
-
-        <div>
-
-        </div>
-
     </section>
   )
 }
