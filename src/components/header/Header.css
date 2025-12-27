@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 50px;
+    padding: 2px 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -36,20 +36,19 @@
 
 .header .logo h3 {
     color: #ffffff;
-    font-size: 1.5rem; /* increase size for impact */
+    font-size: 1.5rem;
     font-family: 'Menorah Grotesk', sans-serif;
-    letter-spacing: 3px; /* robotic feel */
+    letter-spacing: 3px;
     text-transform: uppercase;
     text-shadow: 
-        0 0 5px #0dcaf0,      /* subtle cyan glow */
-        0 0 10px #0dcaf0,     /* soft outer glow */
-        0 0 20px rgba(13, 202, 240, 0.5), /* extended glow */
-        0 0 30px rgba(13, 202, 240, 0.3); /* cinematic fade */
+        0 0 5px #0dcaf0,
+        0 0 20px rgba(13, 202, 240, 0.5),
+        0 0 30px rgba(13, 202, 240, 0.3);
     transition: text-shadow 0.3s ease;
 }
 
 .header .logo span {
-    color: #0dcaf0; /* cyan accent for X */
+    color: #0dcaf0;
     text-shadow: 
         0 0 5px #0dcaf0, 
         0 0 15px #0dcaf0, 
@@ -62,7 +61,8 @@
 
 .header.top a.active {
     background: none;
-    color: #0dcaf0;
+    color: #00d5ff;
+    font-weight: 700;
     border-bottom: 2px solid #ff6905;
     padding: 0;
     box-shadow: none;
@@ -108,6 +108,7 @@
 .header .menu-icon {
     display: none;
     z-index: 4000;
+    margin-right: 20vw;
     cursor: pointer;
 }
 
@@ -124,11 +125,12 @@
     z-index: 3000;
     width: 100%;
     height: 100vh;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     padding-top: 20vh;
+    padding-left: 20px;
     align-items: flex-start;
     gap: 30px;
     /* background-color: red; */
@@ -173,10 +175,30 @@
     .header .menu-icon {
         display: block;
     }
-
-    /* .header .mobile-nav nav a {
-        display: block !important;
-        color: #0dcaf0 !important;
-    } */
 }
+
+
+@media (max-width: 462px) {
+
+    header {
+        padding: 2px;
+    }
+
+    .header .logo h3 {
+        font-size: 1rem;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .header .menu-icon {
+        display: block;
+    }
+
+    .header .user-toolTip {
+        display: none
+    }
+}
+
 
