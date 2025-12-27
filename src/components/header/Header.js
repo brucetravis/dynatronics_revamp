@@ -138,12 +138,16 @@ export default function Header() {
                             Gadgets
                         </NavLink>
 
-                        <NavLink to='/shop' className={({ isActive }) => isActive ? "active" : ""} >0f
+                        <NavLink to='/shop' className={({ isActive }) => isActive ? "active" : ""} >
                             Shop
                         </NavLink>
 
                         <NavLink to='/connect' className={({ isActive }) => isActive ? "active" : ""}>
                             Connect
+                        </NavLink>
+
+                        <NavLink to='/account' className={({ isActive }) => isActive ? "active" : ""}>
+                            Account
                         </NavLink>
                     </nav>
                 </div>
