@@ -5,7 +5,7 @@
     gap: 10px;
     color: rgb(255, 255, 255, 0.5);
     padding: 15px;
-    margin-bottom: 10vh;
+    padding-bottom: 15vh;
 }
 
 
@@ -22,3 +22,36 @@
     transform: translateY(-5px);
 }
 
+
+@media screen and (max-width: 992px) {
+    .footer-section {
+        padding: 2px;
+        padding-bottom: 20vh;
+    }
+
+    .footer-section a {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-section {
+        padding: 2px;
+        padding-bottom: 20vh;
+    }
+
+    .footer-section a {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 462px) {
+    .footer-section {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-bottom: 20vh;
+        box-shadow: 0 4px 20px rgb(13, 202, 240, 0.3);
+    }
+}
