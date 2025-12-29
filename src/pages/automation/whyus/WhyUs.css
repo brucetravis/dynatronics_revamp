@@ -33,7 +33,7 @@
     backdrop-filter: blur(10px); /* glass effect */
     padding: 2rem 1.5rem;
     border-radius: 16px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
     line-height: 1.4;
     text-align: center;
@@ -74,5 +74,12 @@
 @media screen and (max-width: 600px) {
     .whyus-features {
         grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 462px) {
+    .whyus-section {
+        padding: 2rem 0;
     }
 }
