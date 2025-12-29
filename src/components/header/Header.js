@@ -61,9 +61,9 @@ export default function Header() {
 
     const navigate = useNavigate()
 
-    const accountLink = () => {
-        alert('User registration coming soon.')
-    }
+    // const accountLink = () => {
+    //     alert('User registration coming soon.')
+    // }
     
   return (
     <section>
@@ -149,10 +149,10 @@ export default function Header() {
                         <NavLink to='/connect' className={({ isActive }) => isActive ? "active" : ""}>
                             Connect
                         </NavLink>
-
+{/* 
                         <NavLink onClick={accountLink} className={({ isActive }) => isActive ? "active" : ""}>
                             Account
-                        </NavLink>
+                        </NavLink> */}
                     </nav>
                 </div>
             )}
