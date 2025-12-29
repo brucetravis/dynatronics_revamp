@@ -46,6 +46,7 @@ export default function MachineProducts() {
       >
         {machineProducts.map((product, index) => (
           <div
+            key={product.id}
             className='product-card'
           >
             <img 
